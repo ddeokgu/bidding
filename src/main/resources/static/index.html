@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<title>Hello</title>
+	<meta charset="utf-8">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/index.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnBP6fn7yng6ULa9yjLfAjMXEweR87PZI&callback=initMap&v=weekly&solution_channel=GMP_CCS_customcontrols_v1" defer></script>
+</head>
+
+<body>
+<div class="bg-video">
+	<div class="text">
+		<p style="margin: auto;">ENJOY BOHOLIDAY</p>
+		<p style="font-size: 20px; margin-top: auto;">Copyright © thecar</p>
+	</div>
+	<video class="bg-video__content" autoplay muted loop>
+		<source src="assets/images/waves.mp4" type="video/mp4" />
+	</video>
+	<div class="second" >
+		<div class="inner">
+			<p class="titleA">About Bohol</p>
+			<ul>
+				<li class="plainLi">
+					<span class="plainText">보홀주는 필리핀 중앙비사야스 지방에 속한 주로 주도는 타그빌라란이며 인구는 1,313,560명, 면적은 4,820.95km²이다</span>
+				</li>
+				<li class="plainLi">
+					<span class="plainText">인천ICN - 탁빌라란TAG 직항 최소 4시간(왕복 평균가 300,000 ~ 400,000원)</span>
+				</li>
+				<li class="plainLi">
+					<span class="plainText">필리핀의 통화 단위는 페소(PESO) 1 필리핀 페소 => 23.66원</span>
+				</li>
+				<li class="plainLi">
+					<span class="plainText">물가는 한국에 비해 저렴한 편에 속하지만 여행객이 많이 머무는 펑라오섬의 경우 특별 관광지 물가가 적용됨</span>
+				</li>
+				<li class="plainLi">
+					<span class="plainText">보홀라노 영어 타칼라로그어를 사용한다.(관광지의 경우 영어가 보편적으로 사용됨)</span>
+				</li>
+				<li class="plainLi">
+					<span class="plainText">보홀의 9월은 비가 적당히 오는 비수기</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div style="margin: auto;">
+		<div class="map" id="map" style="height: 500px">
+
+		</div>
+	</div>
+	<div class="third">
+		<div class="whole">
+			<div class="left">
+				<img class="img" src="/assets/images/balikasak.jpg">
+			</div>
+			<div class="right" style="padding-left: 100px; padding-right: 100px;">
+				<p class="titleB" style="margin-top: 150px">발리카삭 호핑 투어</p>
+				<span style="color: rgba(0, 0, 0, 0.5);"> ‘보홀‘하면 푸른 바다를 빼놓을 수 없다. 바다로 나가 수영, 스노쿨링을 즐길 수 있는 호핑 투어는 보통 개별 투어를 이용하는데, 현지 여행사나 호텔을 통해 예약할 수 있어요.</span>
+			</div>
+		</div>
+		<div class="whole">
+			<div class="left" style="padding-left: 100px; padding-right: 100px;">
+				<p class="titleC" style="margin-top: 150px">초콜릿 힐</p>
+				<span style="color: rgba(255, 255, 255, 0.25); width: 50%"> 세계 7대 불가사의 지형으로 유네스코 세계유산이자 보홀을 대표하는 명소 초콜릿 힐, 바닷 속에 잠겨져 있던 1,268개의 언덕이 지형의 변화로 위로 솟아오르게 되면서 이런 장관이 만들어졌어요.</span>
+			</div>
+			<div class="right">
+				<img class="img" src="/assets/images/chocolateHill.jpg">
+			</div>
+		</div>
+		<div class="whole">
+			<div class="left">
+				<img class="img" src="/assets/images/monkey.jpg">
+			</div>
+			<div class="right" style="padding-left: 100px; padding-right: 100px;">
+				<p class="titleB" style="margin-top: 150px">안경원숭이</p>
+				<span style="color: rgba(0, 0, 0, 0.5);"> 세상에서 가장 작은 원숭이라는 안경원숭이! 귀염귀염한 비주얼의 안경원숭이는 멸종 위기의 희귀 원숭이인 만큼 서식지인 필리핀 보홀의 안경원숭이 보호구역에서만 만나 볼 수 있어요. 보홀의 마스코트인 안경원숭이를 만나 볼 수 있는 투어는 보통 초콜릿힐과 함께 진행하니 한 번에 즐겨보세요. (멸종위기의 희귀 원숭이인 만큼 조심조심 소중히 다뤄주세요)</span>
+			</div>
+		</div>
+		<div class="whole">
+			<div class="left" style="padding-left: 100px; padding-right: 100px;">
+				<p class="titleC" style="margin-top: 150px">고래상어</p>
+				<span style="color: rgba(255, 255, 255, 0.25); width: 50%"> 세부의 끝자락에 위치한 작은 마을인 오슬롭. 오슬롭은 대표적인 고래상어 출몰지로 유명해요. 이 곳에서는 스노클링을 통해 고래상어를 가까이에서 만나 볼 수 있는 투어를 진행하고 있어요. 쉽게 마주하기 힘든 고래상어와 교감을 하며 잊을 수 없는 추억을 남겨보시길 바라요.</span>
+			</div>
+			<div class="right">
+				<img class="img" src="/assets/images/whaleShark.jpg">
+			</div>
+		</div>
+		<div class="whole">
+			<div class="left">
+				<img class="img" src="/assets/images/twinkle.jpg">
+			</div>
+			<div class="right" style="padding-left: 100px; padding-right: 100px;">
+				<p class="titleB" style="margin-top: 150px">반딧불 투어</p>
+				<span style="color: rgba(0, 0, 0, 0.5);"> 어두운 밤 아바탄 강 깊숙이에 있는 반딧불이를 만나러 갑니다. 맹그로브 나무 위에 군락을 이루고 있는 반딧불이의 모습은 그야말로 장관입니다.
+메인 포인트로 이동하시면 마치 크리스마스 트리를 연상시키는 반딧불이들을 만나실 수 있습니다.</span>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+
+	$(document).ready(function () {
+		initMap();
+	});
+
+
+	let map;
+	let center;
+
+	async function initMap() {
+		const { Map } = await google.maps.importLibrary("maps");
+
+		center = { lat: 9.891180, lng: 124.221136 };
+		map = new Map(document.getElementById("map"), {
+			center: center,
+			zoom: 9,
+			// ...,
+		});
+		marker = new google.maps.Marker({position: center, map : map});
+
+		findPlaces();
+	}
+
+	async function findPlaces() {
+		const { Place } = await google.maps.importLibrary("places");
+		//@ts-ignore
+		const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+		const request = {
+			textQuery: "Tacos in Mountain View",
+			fields: ["displayName", "location", "businessStatus"],
+			includedType: "restaurant",
+			isOpenNow: true,
+			language: "en-US",
+			maxResultCount: 7,
+			minRating: 3.2,
+			region: "us",
+			useStrictTypeFiltering: false,
+		};
+		//@ts-ignore
+		const { places } = await Place.searchByText(request);
+
+		if (places.length) {
+			console.log(places);
+
+			const { LatLngBounds } = await google.maps.importLibrary("core");
+			const bounds = new LatLngBounds();
+
+			// Loop through and get all the results.
+			places.forEach((place) => {
+				const markerView = new AdvancedMarkerElement({
+					map,
+					position: place.location,
+					title: place.displayName,
+				});
+
+				bounds.extend(place.location);
+				console.log(place);
+			});
+			map.setCenter(bounds.getCenter());
+		} else {
+			console.log("No results");
+		}
+	}
+
+</script>
+</body>
+
+</html>
